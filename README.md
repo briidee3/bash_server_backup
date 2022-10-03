@@ -3,7 +3,7 @@ Bash script to automatically keep updated backups of my main computer on my serv
 
 Probably not gonna get a ton of work done on this very soon (due to time constraints with school/work), but I do plan to finish this.
 
-**The general idea:*
+**The general idea:**
 I plan to set up a script to automatically backup any data as soon as there is a save or a deletion on my hard drive. 
 
 **How?:**
