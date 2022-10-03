@@ -6,7 +6,7 @@ Probably not gonna get a ton of work done on this very soon (due to time constra
 *The general idea:*
 I plan to set up a script to automatically backup any data as soon as there is a save or a deletion on my hard drive. 
 
-*How?:
+*How?:*
 The plan, at least for now, is to set up a daemon that keeps an eye out for any time data is created, updated, or deleted on my main machine; from there, send the pertaining info to my home file server for updated backups of my laptop drive. 
 
 *Dev notes:*
