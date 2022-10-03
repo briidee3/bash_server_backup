@@ -3,13 +3,13 @@ Bash script to automatically keep updated backups of my main computer on my serv
 
 Probably not gonna get a ton of work done on this very soon (due to time constraints with school/work), but I do plan to finish this.
 
-*The general idea:*
+**The general idea:*
 I plan to set up a script to automatically backup any data as soon as there is a save or a deletion on my hard drive. 
 
-*How?:*
+**How?:**
 The plan, at least for now, is to set up a daemon that keeps an eye out for any time data is created, updated, or deleted on my main machine; from there, send the pertaining info to my home file server for updated backups of my laptop drive. 
 
-*Dev notes:*
+**Dev notes:**
 - figure out how to monitor all changes (even the smallest ones) on a file system, whether by monitoring whenever there is a command sent to the file system to create, update, or delete a file, or via some other method
 - use the info from the previous bullet point; send it to the file server in the backup directory(or directories) as soon as the change is made (if connected to internet), so that it can run in the background and not cause much issue, since each change is automatically updated and sent to the server (likely via ssh or sftp)
 - if offline, create a local (client-side) "buffer" directory (within the parent directory for the program) to keep tabs on all changes *(not copies, but references to which files were changed, or something along those lines)* and upon connection to the internet, upload them to the server (or present the user with some options as to their preferred method of uploading, so that the internet isn't constantly bogged down as soon as the user connects after being offline)
